@@ -31,7 +31,7 @@ start () {
 add() { 
 	#echo $classID
 	#define 1:1 class and rate,ceil maximum bandwidth
-	tc class add dev eth0 parent 1:1 classid 1:$classID htb rate $SPEED'mbit' ceil $SPEED'mbit' prio 2
+	tc class add dev eth0 parent 1:1 classid 1:$classID htb rate $SPEED'mbps' ceil $SPEED'mbps' prio 2
 	#iensure fairness, add a randoem fair queue
 	tc qdisc add dev eth0 parent 1:$classID handle $classID: sfq perturb 10
 	#set a filter, use iptable to mark, assign that class root 1:0, use i:classID rule to set a rate
