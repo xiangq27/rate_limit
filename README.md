@@ -1,9 +1,9 @@
 # rate_limit
 
 #start: sh limit.sh start 
-#add:  sh limit.sh add classID rate srcIP dstIP stPORT
-#update: sh limit.sh update classID rate srcIP dstIP stPORT
-#remove: sh limit.sh remove classID rate srcIP dstIP stPORT
+#add:  sh limit.sh add classID rate srcIP dstIP dstPORT
+#update: sh limit.sh update classID rate srcIP dstIP dstPORT
+#remove: sh limit.sh remove classID rate srcIP dstIP dstPORT
 #show: sh limit.sh show 
 #stop: sh limit.sh stop 
 
